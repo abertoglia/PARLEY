@@ -3,7 +3,7 @@
 # Startup script for PRISM GUI (Linux/Solaris)
 
 # PRISM home directory
-PRISM_DIR="/Applications/prism-4.7-osx64.arm64"
+PRISM_DIR="/home/arturo/Downloads/prism-4.8.1-linux64-x86"
 
 # Launch using main PRISM script
 PRISM_MAINCLASS=userinterface.GUIPrism

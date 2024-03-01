@@ -16,8 +16,8 @@ def maps():
 
 def models(i):
     prism_model_generator.generate_model(i)
-    infile = f'Applications/EvoChekcer-master/models/model_{i}.prism'
-    outfile = f'Applications/EvoChekcer-master/models/model_{i}_umc.prism'
+    infile = f'Applications/EvoChecker-master/models/model_{i}.prism'
+    outfile = f'Applications/EvoChecker-master/models/model_{i}_umc.prism'
     umc_synthesis.manipulate_prism_model(infile, outfile, before_actions=['east', 'west', 'north', 'south'],
                                          after_actions=['check'])
 
@@ -44,14 +44,14 @@ def fronts(i):
         plot_fronts.plot_pareto_front(i, period)
 
 def main():
-    # maps()
+    maps()
     if not os.path.exists('plots/fronts'):
         os.mkdir('plots/fronts')
     for i in range(10, 11):
-        # models(i)
-        # baseline(i)
-        # evo_checker(i)
-        # fronts(i)
+        models(i)
+        baseline(i)
+        evo_checker(i)
+        fronts(i)
         print(f'Finished map {i}')
     # evaluation
     if not os.path.exists('plots/box-plots'):
