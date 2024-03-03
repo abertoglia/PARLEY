@@ -1,4 +1,11 @@
 __pycache__/
 plots/
 maps/
-Applications/
+Applications/prism/
+Applications/EvoChecker-master/data/
+Applications/EvoChecker-master/libs/
+Applications/EvoChecker-master/models/
+Applications/EvoChecker-master/target/
+*.war
+*.ear
+*.class
