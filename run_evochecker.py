@@ -13,6 +13,7 @@ def run_task(args):
         f.write("       PROPERTIES_FILE = robot.pctl\n")
         f.write("       ALGORITHM = NSGAII\n")
         f.write("       POPULATION_SIZE = 100\n")
+        f.write("       POPULATION_FILE = population.csv\n")
         f.write("       MAX_EVALUATIONS = 4000\n")
         f.write("       PROCESSORS = 1\n")
         f.write("       PLOT_PARETO_FRONT = false\n")

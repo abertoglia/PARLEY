@@ -57,6 +57,9 @@ public class Constants {
   /** Keyword for population size*/
   public static final String POPULATION_SIZE_KEYWORD 	= "POPULATION_SIZE";
 
+  /** Keyword for population values*/
+  public static final String POPULATION_FILE_KEYWORD 	= "POPULATION_FILE";
+
   /** Keyword for processors*/
   public static final String PROCESSORS_KEYWORD 		= "PROCESSORS";
 
