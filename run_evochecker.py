@@ -13,11 +13,12 @@ def run_task(args):
         f.write("       PROPERTIES_FILE = robot.pctl\n")
         f.write("       ALGORITHM = NSGAII\n")
         f.write("       POPULATION_SIZE = 100\n")
-        f.write("       POPULATION_FILE = population.csv\n")
         f.write("       MAX_EVALUATIONS = 4000\n")
         f.write("       PROCESSORS = 1\n")
         f.write("       PLOT_PARETO_FRONT = false\n")
         f.write("       VERBOSE = true\n")
+        f.write("       LOAD_SEED = true\n")
+        f.write("       SEED_FILE = seeds/ROBOT11_BASELINE/front\n")
         f.write("       INIT_PORT = 55{0}\n".format(str(i)))
 
     os.system('java -jar ./Applications/EvoChecker-master/target/EvoChecker-1.1.0.jar ' + path)

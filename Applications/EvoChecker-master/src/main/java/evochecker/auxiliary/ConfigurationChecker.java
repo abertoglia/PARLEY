@@ -39,10 +39,6 @@ public class ConfigurationChecker {
 		if (Utility.getProperty(Constants.POPULATION_SIZE_KEYWORD, NAN).equals(NAN))
 			errors.append(Constants.POPULATION_SIZE_KEYWORD + " not found in configuration script!\n");
 
-		//check population values
-		if (Utility.getProperty(Constants.POPULATION_FILE_KEYWORD, NAN).equals(NAN))
-			errors.append(Constants.POPULATION_FILE_KEYWORD + " not found in configuration script!\n");
-
 		//check evaluations
 		if (Utility.getProperty(Constants.MAX_EVALUATIONS_KEYWORD, NAN).equals(NAN))
 			errors.append(Constants.MAX_EVALUATIONS_KEYWORD + " not found in configuration script!\n");

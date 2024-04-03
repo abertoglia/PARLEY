@@ -1,3 +1,11 @@
+# PARLEY
+
+Paradigm for adaptive uncertainty reduction in selfadaptive systems, or Parley.
+
+This is the repository to the paper: Formal Synthesis of Uncertainty Reduction Controllers, Carwehl et al. (2024).
+
+## Instalation
+
 To replicate our experiments, you need to install EvoChecker using maven.
 To this end, navigate to ./Applications/EvoChecker-master and run mvn install
 EvoChecker should be installed and executable from ./Applications/EvoChecker-master/target/EvoChecker-1.1.0.jar
@@ -24,6 +32,8 @@ Finally, we require the following python packages:
 - multiprocessing
 - re
 
+## Replication
+
 You can replicate our experiments with running the following scripts:
 RQ1_2.py
 - creates 90 random maps of size 10x10
@@ -41,3 +51,16 @@ Alongside, we provide a PRISM model for the web-server in ./models/servers/
 Finally, we provide the code to replicate the turtlebot application in the ./turtlebot directory alongside a dedicated README file.
 
 Any generated data used in our study can be found in the ./Applications/EvoChecker-main/data directory
+
+## PARLEY Extended
+
+The following changes were implemented in order to use custom starting population values on PARLEY
+
+On PARLEY:
+- Added POPULATION_FILE to run_evochecker.py
+- Created a "population.csv" file with baseline values
+
+On EvoChecker:
+- Added POPULATION_FILE to config.properties
+- Added POPULATION_FILE to ConfigurationChecker.java
+- Added POPULATION_FILE to Constants.java
